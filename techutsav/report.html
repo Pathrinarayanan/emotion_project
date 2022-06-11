@@ -1,0 +1,44 @@
+<html>
+    <style>
+        table,th,td
+        {
+            border-collapse:collapse;
+            border:solid;
+        }
+    </style>
+<head>
+    <table style="width : 100%">
+        <tr>
+<th> Neutral</th>
+<th>suprise</th>
+<th> sad</th>
+<th> Happy</th>
+</tr>
+<tr>
+    <td>
+        {% for neutral in  neutrals %}
+        {{neutral}}<br>
+        {% endfor %}
+    </td>
+    <td>
+        {% for suprise in  suprises %}
+        {{suprise}}<br>
+        {% endfor %}
+    </td>
+    <td>
+        {% for angry in  angrys %}
+        {{angry}}<br>
+        {% endfor %}
+    </td>
+    <td>
+        {% for happy in  happys %}
+        {{happy}}<br>
+        {% endfor %}
+    </td>
+</tr>
+</table>
+</head>
+</html>
+
+
+
